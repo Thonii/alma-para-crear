@@ -1,16 +1,8 @@
 import { memo } from "react";
-import { HandHeart, Building2, Users } from "lucide-react";
+import { Building2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ways = [
-  {
-    title: "Donar",
-    icon: HandHeart,
-    description:
-      "Tu aporte nos permite llegar a más niñas y niños con libros, materiales y acompañamiento.",
-    cta: "Donar",
-    aria: "Donar a Alma para Crear",
-  },
   {
     title: "Sumar mi empresa",
     icon: Building2,
@@ -39,7 +31,7 @@ const GetInvolved = () => {
         <p className="text-center text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
           Tu apoyo hace posible que más niños y niñas accedan a una educación de calidad
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {ways.map((w) => (
             <article
               key={w.title}

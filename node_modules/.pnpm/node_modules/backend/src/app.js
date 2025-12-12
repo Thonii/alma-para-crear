@@ -13,8 +13,7 @@ app.get('/', (req, res) => {
 });
 
 // Rutas de la API
-const paymentsRoutes = require('./api/payments.routes');
-app.use('/api/payments', paymentsRoutes);
+
 
 const PORT = process.env.PORT || 4000;
 

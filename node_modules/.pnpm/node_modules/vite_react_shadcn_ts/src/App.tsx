@@ -10,7 +10,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-const Donar = lazy(() => import("./pages/Donar"));
 const Conocenos = lazy(() => import("./pages/Conocenos"));
 const Programas = lazy(() => import("./pages/Programas"));
 const Sumate = lazy(() => import("./pages/Sumate"));
@@ -55,7 +54,6 @@ const App = () => {
             }>
               <Routes>
                 <Route path="/" element={<Index />} />
-                <Route path="/donar" element={<Donar />} />
                 <Route path="/conocenos" element={<Conocenos />} />
                 <Route path="/programas" element={<Programas />} />
                 <Route path="/sumate" element={<Sumate />} />

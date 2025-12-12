@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Heart, Users, Handshake, Building2 } from "lucide-react";
+import { Users, Handshake, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -60,7 +60,7 @@ export default function Sumate() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
             Para Empresas: Impacto que Trasciende
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8 mt-12 items-center">
             {/* Image */}
             <div className="relative rounded-lg overflow-hidden shadow-lg">
@@ -184,29 +184,8 @@ export default function Sumate() {
           </div>
 
           {/* Action Cards */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 hover:shadow-lg transition-shadow bg-card">
-              <CardContent className="p-8">
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center">
-                    <Heart className="w-8 h-8 text-brand" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground">
-                    Haz una Donación Única
-                  </h3>
-                  <Button
-                    size="lg"
-                    variant="brand"
-                    asChild
-                    className="w-full"
-                  >
-                    <a href="/donar">Donar Ahora</a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:shadow-lg transition-shadow bg-card">
+          <div className="flex justify-center">
+            <Card className="border-2 hover:shadow-lg transition-shadow bg-card max-w-md w-full">
               <CardContent className="p-8">
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="w-16 h-16 rounded-full bg-brand/10 flex items-center justify-center">

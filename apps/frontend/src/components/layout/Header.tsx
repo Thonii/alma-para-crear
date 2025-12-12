@@ -12,9 +12,9 @@ const Header = () => {
     <header className="fixed top-0 inset-x-0 z-50 bg-background/95 supports-[backdrop-filter]:bg-background/80 backdrop-blur-sm border-b">
       <div className="container h-16 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2" aria-label="Ir al inicio">
-          <img 
-            src={logo} 
-            alt="Alma para Crear logo" 
+          <img
+            src={logo}
+            alt="Alma para Crear logo"
             className="h-10 w-auto"
           />
         </a>
@@ -41,9 +41,7 @@ const Header = () => {
                   <a href="/sumate" aria-label="Ir a súmate">
                     <Button variant="ghost" className="w-full justify-start text-base font-medium">Súmate</Button>
                   </a>
-                  <a href="/donar" aria-label="Ir a donar">
-                    <Button variant="default" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-base font-semibold">Dona</Button>
-                  </a>
+
                 </nav>
                 <div className="pt-4 border-t text-sm text-muted-foreground space-y-2">
                   <p className="font-semibold text-foreground">Contacto</p>
