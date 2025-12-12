@@ -1,0 +1,23 @@
+
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('Backend de Alma para Crear');
+});
+
+// Rutas de la API
+const paymentsRoutes = require('./api/payments.routes');
+app.use('/api/payments', paymentsRoutes);
+
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
+});
