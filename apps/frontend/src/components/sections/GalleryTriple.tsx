@@ -1,16 +1,27 @@
 import { memo } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import g11 from "@/assets/alma-gallery1-1.jpg";
-import g12 from "@/assets/alma-gallery1-2.jpg";
-import g21 from "@/assets/alma-gallery2-1.jpg";
-import g22 from "@/assets/alma-gallery2-2.jpg";
-import g31 from "@/assets/alma-gallery3-1.jpg";
-import g32 from "@/assets/alma-gallery3-2.jpg";
+//lectura
+import g11 from "@/assets/lectura1.webp";
+import g12 from "@/assets/lectura2.webp";
+import g13 from "@/assets/lectura3.webp";
+import g14 from "@/assets/lectura4.webp";
+//voluntariado
+import g21 from "@/assets/refuerzo1.webp";
+import g22 from "@/assets/refuerzo2.webp";
+import g23 from "@/assets/refuerzo3.webp";
+import g24 from "@/assets/refuerzo4.webp";
+import g25 from "@/assets/refuerzo5.webp";
+//eventos y talleres
+import g31 from "@/assets/eventos1.webp";
+import g32 from "@/assets/eventos2.webp";
+import g33 from "@/assets/eventos3.webp";
+import g34 from "@/assets/eventos4.webp";
+import g35 from "@/assets/eventos5.webp";
 
 const groups = [
-  { title: "Programas de Lectura", images: [g11, g12] },
-  { title: "Voluntariado", images: [g21, g22] },
-  { title: "Eventos y Talleres", images: [g31, g32] },
+  { title: "Programas de Lectura", images: [g11, g12, g13, g14] },
+  { title: "Voluntariado", images: [g21, g22, g23, g24, g25] },
+  { title: "Eventos y Talleres", images: [g31, g32, g33, g34, g35] },
 ];
 
 const GalleryTriple = () => {
@@ -31,13 +42,13 @@ const GalleryTriple = () => {
                 <CarouselContent>
                   {g.images.map((img, i) => (
                     <CarouselItem key={i}>
-                      <img 
-                        src={img} 
-                        alt={`${g.title} ${i + 1}`} 
-                        loading="lazy" 
+                      <img
+                        src={img}
+                        alt={`${g.title} ${i + 1}`}
+                        loading="lazy"
                         width="400"
                         height="300"
-                        className="w-full h-56 sm:h-64 object-cover rounded-xl shadow-xl" 
+                        className="w-full h-56 sm:h-64 object-cover rounded-xl shadow-xl"
                       />
                     </CarouselItem>
                   ))}
