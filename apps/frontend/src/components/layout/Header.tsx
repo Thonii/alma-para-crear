@@ -41,6 +41,9 @@ const Header = () => {
                   <a href="/sumate" aria-label="Ir a súmate">
                     <Button variant="ghost" className="w-full justify-start text-base font-medium">Súmate</Button>
                   </a>
+                  <a href="/donar" aria-label="Ir a donar">
+                    <Button variant="ghost" className="w-full justify-start text-base font-medium text-brand">Donar</Button>
+                  </a>
 
                 </nav>
                 <div className="pt-4 border-t text-sm text-muted-foreground space-y-2">

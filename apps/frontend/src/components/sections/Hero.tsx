@@ -15,20 +15,20 @@ const Hero = () => {
               Con Alma para Crear, niños y niñas cumplen sus sueños a través de programas de aprendizaje que inspiran curiosidad y abren oportunidades.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <Button 
-                variant="default" 
-                size="lg" 
+              <Button
+                variant="default"
+                size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
                 asChild
               >
                 <a href="/donar">Dona ahora</a>
               </Button>
-              <Button 
-                variant="secondary" 
-                size="lg" 
+              <Button
+                variant="secondary"
+                size="lg"
                 asChild
               >
-                  <a href="/conocenos">Conócenos</a>
+                <a href="/conocenos">Conócenos</a>
               </Button>
             </div>
           </article>

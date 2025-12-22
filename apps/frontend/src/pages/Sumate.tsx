@@ -61,6 +61,8 @@ export default function Sumate() {
             Para Empresas: Impacto que Trasciende
           </h2>
 
+
+
           <div className="grid md:grid-cols-2 gap-8 mt-12 items-center">
             {/* Image */}
             <div className="relative rounded-lg overflow-hidden shadow-lg">

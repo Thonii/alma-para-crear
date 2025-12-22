@@ -13,6 +13,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const Conocenos = lazy(() => import("./pages/Conocenos"));
 const Programas = lazy(() => import("./pages/Programas"));
 const Sumate = lazy(() => import("./pages/Sumate"));
+const Donar = lazy(() => import("./pages/Donar"));
 const Header = lazy(() => import("@/components/layout/Header"));
 
 const queryClient = new QueryClient();
@@ -57,6 +58,7 @@ const App = () => {
                 <Route path="/conocenos" element={<Conocenos />} />
                 <Route path="/programas" element={<Programas />} />
                 <Route path="/sumate" element={<Sumate />} />
+                <Route path="/donar" element={<Donar />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
