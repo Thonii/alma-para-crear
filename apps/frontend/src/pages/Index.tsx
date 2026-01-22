@@ -46,42 +46,42 @@ const Index = () => {
     <main id="main-container" className="scroll-smooth md:snap-y md:snap-mandatory md:h-screen md:overflow-y-scroll">
       <SectionNavigator />
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="hero" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="hero" className="min-h-screen md:snap-start scroll-mt-16">
           <Hero />
         </section>
       </Suspense>
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="impact" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="impact" className="min-h-screen md:snap-start scroll-mt-16">
           <Impact />
         </section>
       </Suspense>
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="gallery" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="gallery" className="min-h-screen md:snap-start scroll-mt-16">
           <GalleryTriple />
         </section>
       </Suspense>
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="programs" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="programs" className="min-h-screen md:snap-start scroll-mt-16">
           <Programs />
         </section>
       </Suspense>
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="get-involved" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="get-involved" className="min-h-screen md:snap-start scroll-mt-16">
           <GetInvolved />
         </section>
       </Suspense>
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="allies" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="allies" className="min-h-screen md:snap-start scroll-mt-16">
           <StrategicAllies />
         </section>
       </Suspense>
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="videos" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="videos" className="min-h-screen md:snap-start scroll-mt-16">
           <Videos />
         </section>
       </Suspense>
       <Suspense fallback={<SectionSkeleton />}>
-        <section id="contact" className="min-h-screen md:h-screen md:snap-start scroll-mt-16">
+        <section id="contact" className="min-h-screen md:snap-start scroll-mt-16">
           <Contact />
         </section>
       </Suspense>
