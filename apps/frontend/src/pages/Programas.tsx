@@ -39,11 +39,15 @@ const Programas = () => {
                 talleres gratuitos en comunidades vulnerables.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button variant="default" size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                  Inscribir a mi hijo/a
+                <Button variant="default" size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                  <a href="https://wa.me/51963818841" target="_blank" rel="noopener noreferrer">
+                    Inscribir a mi hijo/a
+                  </a>
                 </Button>
-                <Button variant="outline" size="lg">
-                  Ver sedes
+                <Button variant="outline" size="lg" asChild>
+                  <a href="https://www.facebook.com/almaparacrear/" target="_blank" rel="noopener noreferrer">
+                    Ver sedes
+                  </a>
                 </Button>
               </div>
             </div>
@@ -84,11 +88,15 @@ const Programas = () => {
                 Para desarrollar las habilidades lectoras y digitales preparando a los estudiantes para un mundo cada vez más tecnológico.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button variant="default" size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                  Conocer más
+                <Button variant="default" size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+                  <a href="https://www.facebook.com/share/r/1DEsT8wCu5/" target="_blank" rel="noopener noreferrer">
+                    Conocer más
+                  </a>
                 </Button>
-                <Button variant="outline" size="lg">
-                  Ver detalles
+                <Button variant="outline" size="lg" asChild>
+                  <a href="https://www.facebook.com/almaparacrear/" target="_blank" rel="noopener noreferrer">
+                    Ver detalles
+                  </a>
                 </Button>
               </div>
             </div>
