@@ -11,7 +11,9 @@ import marsiHumanFoto from "@/assets/marsi-human-foto.webp";
 import wennyVillalobosFoto from "@/assets/wenny-villalobos-foto.webp";
 import jehryMendoza from "@/assets/jehry-mendoza.webp";
 import Footer from "@/components/layout/Footer";
-import placeholderImage from "@/assets/placeholder-about.png";
+import conocenosIntro from "@/assets/conocenos-intro.jpg";
+import conocenosHistoria from "@/assets/conocenos-historia.jpg";
+import conocenosMision from "@/assets/conocenos-mision.jpg";
 
 const directoryMembers = [
   {
@@ -88,7 +90,7 @@ const Conocenos = () => {
               </div>
               <div className="h-full">
                 <img
-                  src={placeholderImage}
+                  src={conocenosIntro}
                   alt="Niños en Alma para Crear"
                   className="w-full h-64 md:h-full object-cover rounded-2xl shadow-sm"
                 />
@@ -103,7 +105,7 @@ const Conocenos = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="order-last md:order-first h-full">
                 <img
-                  src={placeholderImage}
+                  src={conocenosHistoria}
                   alt="Nuestra Historia"
                   className="w-full h-64 md:h-full object-cover rounded-2xl shadow-sm"
                 />
@@ -134,7 +136,7 @@ const Conocenos = () => {
               </div>
               <div className="h-full">
                 <img
-                  src={placeholderImage}
+                  src={conocenosMision}
                   alt="Nuestra Misión"
                   className="w-full h-64 md:h-full object-cover rounded-2xl shadow-sm"
                 />
