@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, User, Users, Trophy, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-alma-final.webp";
 import anaMendozaFoto from "@/assets/ana-mendoza-foto.webp";
@@ -11,6 +11,7 @@ import marsiHumanFoto from "@/assets/marsi-human-foto.webp";
 import wennyVillalobosFoto from "@/assets/wenny-villalobos-foto.webp";
 import jehryMendoza from "@/assets/jehry-mendoza.webp";
 import Footer from "@/components/layout/Footer";
+import placeholderImage from "@/assets/placeholder-about.png";
 
 const directoryMembers = [
   {
@@ -72,115 +73,178 @@ const Conocenos = () => {
           <ArrowLeft size={20} />
           <span>Volver al inicio</span>
         </Link>
-      
-        {/* Sección Sobre Alma para Crear */}
-        <section className="py-16 md:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div>
-                <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-foreground mb-6">
-                  Conoce a Alma para Crear
-                </h1>
-                <p className="text-lg text-brand-foreground/90 leading-relaxed">
+
+        {/* Section 1: Conoce a Alma para Crear (Text Left, Image Right) */}
+        <section className="py-8 md:py-12">
+          <div className="bg-[#4DD0E1] rounded-3xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-6">
+                <h2 className="font-display text-3xl md:text-5xl text-white font-bold leading-tight">
+                  Conoce a Alma<br />para crear
+                </h2>
+                <p className="text-white/90 text-lg leading-relaxed">
                   Somos una organización sin fines de lucro ubicada en Ancón, Lima, comprometida con el desarrollo integral de niños y jóvenes a través de la educación, el arte y la creatividad.
                 </p>
               </div>
-              
-              <div className="space-y-6">
-                <div>
-                  <h2 className="font-display text-xl md:text-2xl text-brand-foreground mb-3">
-                    Nuestra Historia
-                  </h2>
-                  <p className="text-brand-foreground/80 leading-relaxed">
-                    Fundada en 2018, Alma para Crear nació del sueño de transformar vidas a través de la educación. Comenzamos con un pequeño grupo de voluntarios y hoy impactamos directamente a más de 200 niños cada año, ofreciendo programas de lectura temprana, clubes de lectores y talleres creativos.
-                  </p>
-                </div>
-                
-                <div>
-                  <h2 className="font-display text-xl md:text-2xl text-brand-foreground mb-3">
-                    Nuestra Misión
-                  </h2>
-                  <p className="text-brand-foreground/80 leading-relaxed">
-                    Somos una organización que trabaja para reducir las brechas de desigualdad, que todas las niñas, niños, adolescentes y adultos tengan acceso a una educación inclusiva, equitativa y de calidad, promoviendo mejores oportunidades de aprendizaje. Colaborando con sus comunidades y organizaciones públicas y privadas, con el compromiso de conseguir cambios positivos y duraderos para ellas y ellos.
-                  </p>
-                </div>
-                
-                <div>
-                  <h2 className="font-display text-xl md:text-2xl text-brand-foreground mb-3">
-                    Nuestros Logros
-                  </h2>
-                  <ul className="space-y-2 text-brand-foreground/80">
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-brand-foreground rounded-full"></div>
-                      <span>Más de 1,500 niños beneficiados desde nuestra fundación</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-brand-foreground rounded-full"></div>
-                      <span>85% de mejora en comprensión lectora en nuestros participantes</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-brand-foreground rounded-full"></div>
-                      <span>Red de 50+ voluntarios comprometidos</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-brand-foreground rounded-full"></div>
-                      <span>Reconocimiento municipal por labor social 2023</span>
-                    </li>
-                  </ul>
-                </div>
+              <div className="h-full">
+                <img
+                  src={placeholderImage}
+                  alt="Niños en Alma para Crear"
+                  className="w-full h-64 md:h-full object-cover rounded-2xl shadow-sm"
+                />
               </div>
-            </div>
-            
-            <div className="relative">
-              <Card className="bg-brand-foreground/10 border-brand-foreground/20 backdrop-blur-sm">
-                <CardContent className="p-8">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto bg-brand-foreground/20 flex items-center justify-center p-2">
-                      <img src= {logo} alt="Alma para Crear Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-xl text-brand-foreground mb-2">
-                        Alma para Crear
-                      </h3>
-                      <p className="text-brand-foreground/70 text-sm">
-                        Transformando vidas desde Ancón, Lima
-                      </p>
-                    </div>
-                    <div className="pt-4 space-y-2 text-sm text-brand-foreground/80">
-                      <div className="flex justify-between">
-                        <span>Fundada:</span>
-                        <span className="font-medium">2018</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Ubicación:</span>
-                        <span className="font-medium">Ancón, Lima</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Beneficiarios:</span>
-                        <span className="font-medium">200+ niños/año</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Programas:</span>
-                        <span className="font-medium">3 activos</span>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
-  
+
+        {/* Section 2: Nuestra Historia (Image Left, Text Right) */}
+        <section className="py-8 md:py-12">
+          <div className="bg-brand-foreground/5 rounded-3xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="order-last md:order-first h-full">
+                <img
+                  src={placeholderImage}
+                  alt="Nuestra Historia"
+                  className="w-full h-64 md:h-full object-cover rounded-2xl shadow-sm"
+                />
+              </div>
+              <div className="space-y-6">
+                <h2 className="font-display text-3xl md:text-5xl text-brand-foreground font-bold leading-tight">
+                  Nuestra Historia
+                </h2>
+                <p className="text-brand-foreground/80 text-lg leading-relaxed">
+                  Fundada en 2018, Alma para Crear nació del sueño de transformar vidas a través de la educación. Comenzamos con un pequeño grupo de voluntarios y hoy impactamos directamente a más de 200 niños cada año, ofreciendo programas de lectura temprana, clubes de lectores y talleres creativos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3: Nuestra Misión (Text Left, Image Right) */}
+        <section className="py-8 md:py-12">
+          <div className="bg-[#4DD0E1] rounded-3xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-6">
+                <h2 className="font-display text-3xl md:text-5xl text-white font-bold leading-tight">
+                  Nuestra Misión
+                </h2>
+                <p className="text-white/90 text-lg leading-relaxed">
+                  Somos una organización que trabaja para reducir las brechas de desigualdad, asegurando que niñas, niños, adolescentes y adultos tengan acceso a una educación inclusiva, equitativa y de calidad. Colaboramos con comunidades y organizaciones para lograr cambios positivos y duraderos.
+                </p>
+              </div>
+              <div className="h-full">
+                <img
+                  src={placeholderImage}
+                  alt="Nuestra Misión"
+                  className="w-full h-64 md:h-full object-cover rounded-2xl shadow-sm"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 4: Nuestros Logros (Stats Grid) */}
+        <section className="py-16 md:py-24 bg-brand-foreground/5">
+          <div className="text-center max-w-3xl mx-auto mb-16 px-4">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-foreground mb-6">
+              Nuestros <span className="text-accent">Logros</span>
+            </h2>
+            <p className="text-brand-foreground/80 text-lg leading-relaxed">
+              Transformando vidas a través de la educación y el compromiso comunitario.
+              Cada número representa una historia de éxito y un futuro mejor.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Card 1 */}
+            <Card className="relative overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600">
+                  <User size={24} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-4xl font-bold text-gray-900">1,500+</h3>
+                  <p className="text-gray-600 font-medium">
+                    Niños beneficiados con programas escolares
+                  </p>
+                </div>
+                <div className="absolute -bottom-4 -right-4 text-gray-100 transform -rotate-12">
+                  <User size={100} />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Card 2 */}
+            <Card className="relative overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 text-purple-600">
+                  <ArrowUpRight size={24} />
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-4xl font-bold text-gray-900">85%</h3>
+                  <div className="space-y-2">
+                    <div className="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
+                      <div className="h-full bg-accent w-[85%] rounded-full" />
+                    </div>
+                    <p className="text-gray-600 font-medium">
+                      Mejora en comprensión lectora
+                    </p>
+                  </div>
+                </div>
+                <div className="absolute -bottom-4 -right-4 text-gray-100 transform -rotate-12">
+                  <ArrowUpRight size={100} />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Card 3 */}
+            <Card className="relative overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-600">
+                  <Users size={24} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-4xl font-bold text-gray-900">50+</h3>
+                  <p className="text-gray-600 font-medium">
+                    Voluntarios activos en la comunidad
+                  </p>
+                </div>
+                <div className="absolute -bottom-4 -right-4 text-gray-100 transform -rotate-12">
+                  <Users size={100} />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Card 4 */}
+            <Card className="relative overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6 text-yellow-600">
+                  <Trophy size={24} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-4xl font-bold text-gray-900">2023</h3>
+                  <p className="text-gray-600 font-medium">
+                    Reconocimiento Municipal por impacto social
+                  </p>
+                </div>
+                <div className="absolute -bottom-4 -right-4 text-gray-100 transform -rotate-12">
+                  <Trophy size={100} />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Sección Nuestro Directorio */}
         <section className="py-16 md:py-24">
           <div className="text-center mb-12">
-            <div className="inline-block bg-accent px-12 py-4 mb-8">
+            <div className="inline-block bg-accent px-12 py-4 mb-8 rounded-full">
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-white">
                 NUESTRO DIRECTORIO
               </h2>
             </div>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {directoryMembers.map((member) => (
               <Card key={member.id} className="bg-white border-border">
@@ -214,13 +278,13 @@ const Conocenos = () => {
         {/* Sección Nuestro Equipo */}
         <section className="py-16 md:py-24">
           <div className="text-center mb-12">
-            <div className="inline-block bg-accent px-12 py-4 mb-8">
+            <div className="inline-block bg-accent px-12 py-4 mb-8 rounded-full">
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-white">
                 NUESTRO EQUIPO
               </h2>
             </div>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {teamMembers.map((member) => (
               <Card key={member.id} className="bg-white border-border">
